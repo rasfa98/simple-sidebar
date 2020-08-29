@@ -7,6 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/babel src --out-file index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasfa98/simple-sidebar.git"
+  },
+  "keywords": [
+    "React",
+    "Sidebar",
+    "Navigation",
+    "Drawer"
+  ],
   "author": "Rasmus Falk",
   "license": "MIT",
   "peerDependencies": {
