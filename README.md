@@ -12,7 +12,7 @@ A simple sidebar to use in your React project!
 
 ## Installation
 
-`npm install simple sidebar`
+`npm install simple-sidebar`
 
 ## How to use
 
