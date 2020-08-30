@@ -34,7 +34,8 @@ const OPEN_STYLES = {
   },
 };
 
-const Sidebar = ({ isOpen, onClose, content, children }) => {
+const Sidebar = ({ isOpen, onClose, content, children, options = {} }) => {
+  console.log(options);
   return (
     <div
       style={{
@@ -46,6 +47,9 @@ const Sidebar = ({ isOpen, onClose, content, children }) => {
         style={{
           ...DEFAULT_STYLES.content,
           ...(isOpen ? OPEN_STYLES.content : {}),
+          ...{
+            background: options.background || DEFAULT_STYLES.content.background,
+          },
         }}
       >
         {content}
@@ -55,6 +59,9 @@ const Sidebar = ({ isOpen, onClose, content, children }) => {
         style={{
           ...DEFAULT_STYLES.overlay,
           ...(isOpen ? OPEN_STYLES.overlay : {}),
+          ...{
+            background: options.overlay || DEFAULT_STYLES.overlay.background,
+          },
         }}
       />
       {children}
